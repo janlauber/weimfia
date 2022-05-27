@@ -1,2 +1,2 @@
 # weimfia.ch-api
-waserzähleichmeinenfreundenimausgang.ch blog api application
+waserzähleichmeinenfreundenimausgang.ch blog application powered by FireBase
