@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"></meta>
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
         <meta name="apple-mobile-web-app-status-bar-style" content="default"></meta>
-        <meta name="theme-color" content="#FFF"></meta>
+        <meta name="theme-color" content="#4762E6"></meta>
         <meta name="description" content="A blog for sharing useless knowledge."></meta>
       </Head>
         <UserContextProvider>

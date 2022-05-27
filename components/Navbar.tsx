@@ -41,23 +41,26 @@ const Navbar = () => {
             )}
         >
             <ViewGridIcon
+                onClick={() => router.push("/posts")}
                 className={classNames(
                     router.pathname === "/posts" ? "text-gray-500" : "text-gray-300",
-                    "h-10 w-10 mx-auto sm:hover:scale-105 transition-all duration-300 ease-out",
+                    "h-10 w-10 mx-auto sm:hover:scale-105 hover:active:scale-105 transition-all duration-300 ease-out",
                     "cursor-pointer"
                 )}
             />
             <ViewListIcon
+                onClick={() => router.push("/myposts")}
                 className={classNames(
                     router.pathname === "/myposts" ? "text-gray-500" : "text-gray-300",
-                    "h-10 w-10 mx-auto sm:hover:scale-105 transition-all duration-300 ease-out",
+                    "h-10 w-10 mx-auto sm:hover:scale-105 hover:active:scale-105 transition-all duration-300 ease-out",
                     "cursor-pointer"
                 )}
             />
             <UserIcon
+                onClick={() => router.push("/profile")}
                 className={classNames(
                     router.pathname === "/profile" ? "text-gray-500" : "text-gray-300",
-                    "h-10 w-10 mx-auto sm:hover:scale-105 transition-all duration-300 ease-out",
+                    "h-10 w-10 mx-auto sm:hover:scale-105 hover:active:scale-105 transition-all duration-300 ease-out",
                     "cursor-pointer"
                 )}
             />

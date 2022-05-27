@@ -5,6 +5,7 @@ import { useUserContext } from "../context/userContext";
 import classNames from "../lib/tailwindClasses";
 import Loading from "./Loading";
 import Navbar from "./Navbar";
+import Topbar from "./Topbar";
 
 export default function Layout(props: any) {
     const { user, loading, error }: any = useUserContext();
@@ -13,15 +14,17 @@ export default function Layout(props: any) {
 
     return (
         <div className="h-screen">
+            <Topbar />
             {
                 router.pathname != "/" ?
-                    <Navbar /> :
+                    <Navbar />
+                    :
                     null
             }
             {
                 loading ?
                     <Loading /> :
-                    <main className="">
+                    <main className="pt-20">
                         {React.cloneElement(props.children)}
                     </main>
             }

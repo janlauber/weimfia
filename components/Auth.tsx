@@ -1,13 +1,16 @@
+import { useUserContext } from "../context/userContext";
 
 const Auth = () => {
+    const { signInWithGoogle, signInWithGithub }: any = useUserContext();
     return (
         <div
             className="flex h-screen justify-center items-center"
         >
             <div
-            className="grid grid-cols-1 gap-4"
+                className="grid grid-cols-1 gap-4"
             >
                 <button
+                    onClick={signInWithGoogle}
                     className="border font-medium border-gray-400 w-80 m-auto rounded-full py-2"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="inline" viewBox="0 0 16 16">
@@ -18,6 +21,7 @@ const Auth = () => {
                 </button>
 
                 <button
+                    onClick={signInWithGithub}
                     className="border font-medium border-gray-400 w-80 m-auto rounded-full py-2"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="inline" viewBox="0 0 16 16">
