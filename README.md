@@ -1,4 +1,10 @@
 <p align="center">
+    <a href="https://github.com/janlauber">
+        <img height="220px" src="public/images/logo/weimfia_logo.png" />
+    </a>
+</p>
+
+<p align="center">
   <strong>
     <a href="https://weimfia.ch/">Was Erzähle Ich Meinen Freunden Im Ausgang</a>
     <br />

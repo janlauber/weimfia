@@ -14,10 +14,12 @@ export default function Layout(props: any) {
 
     return (
         <div className="h-screen">
-            <Topbar />
             {
                 router.pathname != "/" ?
-                    <Navbar />
+                    <>
+                        <Topbar />
+                        <Navbar />
+                    </>
                     :
                     null
             }
