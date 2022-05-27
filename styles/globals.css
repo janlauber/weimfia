@@ -1,16 +1,21 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: #F3D2C1; */
 }
 
 * {
-  box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
