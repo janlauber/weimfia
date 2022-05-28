@@ -57,7 +57,7 @@ export const UserContextProvider = ({ children }: Props) => {
             .then(() => {
                 setLoading(false);
                 DefaultAlert("Successfully signed in with Google", AlertType.Success);
-                router.push('/owesme');
+                router.push('/posts');
             })
             .catch((err: any) => {
                 setError(err);
@@ -76,7 +76,7 @@ export const UserContextProvider = ({ children }: Props) => {
             .then(() => {
                 setLoading(false);
                 DefaultAlert("Successfully signed in with GitHub", AlertType.Success);
-                router.push('/owesme');
+                router.push('/posts');
             })
             .catch((err: any) => {
                 setError(err);

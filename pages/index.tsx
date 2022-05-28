@@ -1,8 +1,16 @@
+import { useRouter } from "next/router";
+import Auth from "../components/Auth";
+import { useUserContext } from "../context/userContext"
+
 const Home = () => {
-  return (
-    <>
-    </>
-  )
+  const { user }: any = useUserContext();
+  const router = useRouter();
+
+  if (user) {
+    router.push("/posts");
+  }
+
+  return <Auth />;
 }
 
 export default Home
