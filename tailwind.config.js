@@ -16,7 +16,7 @@ module.exports = {
       },
       colors: {
         transparent: "transparent",
-        'base': '#4762E6',
+        'main': '#4762E6',
         'accent': '#4BBBF2',
         'light-shade': '#C2CAF2'
       },

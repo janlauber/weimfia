@@ -26,7 +26,7 @@ export default function Layout(props: any) {
             {
                 loading ?
                     <Loading /> :
-                    <main className="pt-20">
+                    <main className="p-2">
                         {React.cloneElement(props.children)}
                     </main>
             }
