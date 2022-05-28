@@ -8,7 +8,7 @@ const Auth = () => {
         >
 
             <div
-                className=" -translate-y-20 grid grid-cols-1 gap-4"
+                className="grid grid-cols-1 gap-4"
             >
                 <div className="block m-auto">
                     <svg width="159" height="215" className="block" viewBox="0 0 265 358" fill="none" xmlns="http://www.w3.org/2000/svg">
