@@ -14,13 +14,9 @@ const Navbar = () => {
     }
 
     const handleScroll = () => {
-        if (window.scrollY >= lastScroll) {
+        if (window.scrollY >= lastScroll && window.scrollY > 0) {
             setShow(false);
         } else {
-            setShow(true);
-        }
-
-        if (window.scrollY <= 0) {
             setShow(true);
         }
 
