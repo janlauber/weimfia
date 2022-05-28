@@ -30,10 +30,10 @@ jobs:
           echo "NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=${{ secrets.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID }}" >> .env
           echo "NEXT_PUBLIC_APP_VERSION=${{ env.RELEASE_VERSION }}" >> .env
       - name: build
+        env:
+          NODE_ENV: test
         run: |
           yarn build
-      - uses: actions/checkout@v2
-      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
